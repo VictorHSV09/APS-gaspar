@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1410144735247944012}
   - component: {fileID: 2842826940697028086}
   - component: {fileID: 6053184380155739705}
+  - component: {fileID: 1840297197181033030}
   m_Layer: 0
   m_Name: Garrafa
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4223437888195865351}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7723255, y: 0.39650014, z: 0}
+  m_LocalPosition: {x: 0.7723255, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0b090b3bff4267a41a38d796225e3248, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -168,3 +169,18 @@ PolygonCollider2D:
       - {x: 0.16, y: 0.17}
       - {x: 0.099999994, y: 0.31}
   m_UseDelaunayMesh: 0
+--- !u!114 &1840297197181033030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4223437888195865351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c33b935cedd2ca46bc6ee92639d18e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRecyclable: 1
+  recyclablePoints: 10
+  nonRecyclablePenalty: -5
